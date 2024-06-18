@@ -6,6 +6,7 @@
     <style>
       .titolo{
         text-align: center;
+        border: 2px solid wheat;
       }
       .giochi-img{
         width: 33%;
@@ -19,11 +20,24 @@
       td{
         width: 33%;
       }
+      body{
+        background-image: linear-gradient(red, orange);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+      }
+      a:link, a:visited{
+        color: white;
+        text-decoration: none;
+      }
+      .text:hover{
+        background: radial-gradient(orange, orange, red);
+      }
     </style>
   </head>
   <body>
     <h1 class="titolo">Laboratorio di Informatica 2024</h1>
-    <hr>
+    <br><br>
     <table border="1" align="center">
       <tr>
         <td>
@@ -35,10 +49,9 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="text">
                   <div>
-                    <h2 class="giochi-txt">SALTA LA PALLA 2D
-                    </h2>
+                    <h2 class="giochi-txt">SALTA LA PALLA</h2>
                   </div>
                 </td>
               </tr>
@@ -54,9 +67,9 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="text">
                   <div>
-                    <h2 class="giochi-txt">ENEMY JUMPER 2D</h2>
+                    <h2 class="giochi-txt">ENEMY JUMPER</h2>
                   </div>
                 </td>
               </tr>
@@ -72,9 +85,9 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="text">
                   <div>
-                    <h2 class="giochi-txt">RETRO SPACE KILLER 2D</h2>
+                    <h2 class="giochi-txt">RETRO SPACE KILLER</h2>
                   </div>
                 </td>
               </tr>
@@ -83,5 +96,51 @@
         </td>
       </tr>
     </table>
+    <style>
+      footer {
+      background-color: rgba(3, 3, 3, 0.25);
+      color: #fff;
+      padding: 20px;
+      }
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      footer p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+      footer nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      footer nav ul li {
+        margin-right: 1rem;
+      }
+      .footer-link {
+        color: #fff;
+        text-decoration: none;
+      }
+      .footer-link:hover {
+        color: #ccc;
+      }
+    </style>
+    <br><br><br><br><br><br><br><br><br><br>
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2023 Computer Lab - All rights reserved.</p>
+        <nav>
+          <ul>
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
